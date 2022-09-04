@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>jarvis-austin</artifactId>
@@ -15,5 +15,41 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <!--    com.jarvis    -->
+        <dependency>
+            <groupId>com.jarvis</groupId>
+            <artifactId>austin-support</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--    com.jarvis    -->
+        <dependency>
+            <groupId>com.jarvis</groupId>
+            <artifactId>austin-service-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--    com.jarvis    -->
+        <dependency>
+            <groupId>com.jarvis</groupId>
+            <artifactId>austin-service-api-impl</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--    com.xuxueli    -->
+        <dependency>
+            <groupId>com.xuxueli</groupId>
+            <artifactId>xxl-job-core</artifactId>
+        </dependency>
+
+        <!--    org.springframework.boot:yaml文档 配置化 spring线程池    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+    </dependencies>
 
 </project>
