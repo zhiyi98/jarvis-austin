@@ -1,6 +1,6 @@
 package com.jarvis.common.domain;
 
-import com.java3y.austin.common.dto.model.ContentModel;
+import com.jarvis.common.dto.model.ContentModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
