@@ -1,0 +1,18 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3.10-management
+    container_name: rabbitmq
+    ports:
+      - "15673:15672"
+      - "5673:5672"
+    hostname: rabbitmq
+    restart: always
+    privileged: true
+    environment:
+      - TZ=Asia/Shanghai
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=jq2m9x
+    volumes:
+      - ./data/rabbitmq/rabbitmq/:/var/lib/rabbitmq
+      - ./data/rabbitmq/rabbitmq/:/var/log/rabbitmq

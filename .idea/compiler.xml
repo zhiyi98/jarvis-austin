@@ -6,7 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jarvis-austin" />
+        <module name="austin-support" />
+        <module name="austin-web" />
+        <module name="austin-handler" />
+        <module name="austin-service-api" />
+        <module name="austin-client" />
+        <module name="austin-stream" />
+        <module name="austin-cron" />
+        <module name="austin-service-api-impl" />
+        <module name="austin-common" />
       </profile>
     </annotationProcessing>
   </component>
